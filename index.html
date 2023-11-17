@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML Favicon -->
+    <link rel="icon" type="image/x-icon" href="/logoBMI.png">
+
+
+    <title>เครื่องคำนวณหาค่าดัชนีมวลกาย (BMI)</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">เครื่องคำนวณ <br> หาค่าดัชนีมวลกาย (BMI)</h2>
+        <form>
+            <p class="inputs">
+                <label>ความสูง (เซ็นติเมตร) | Height (CM): </label>
+                <input type="number" id="height" min="1">
+            </p>
+            <p class="inputs">
+                <label>นำ้หนัก (กิโลกรัม) | Weight (KG): </label>
+                <input type="number" id="weight" min="1">
+            </p>
+    
+            <!-- <button class="calcBtn">คำนวณ | Calculate</button> -->
+            <button  class="button-64" role="button"><span class="text">คำนวณ | Calculate</span></button>
+
+            <div style="margin-top: 20px;">ค่าดัชนีมวลกายของคุณคือ : <p id="results"></p>
+            </div>
+            <div style="margin-top: 20px;">สถานะ : <p id="results"></p>
+            </div>
+            <p id="message"></p> <br>
+            <h3 style="text-align: center;">หมายเหตุ</h3>
+            <p style="text-align: center;">อ้วนมาก = 30.0 ขึ้นไป</p>
+            <p style="text-align: center;">อ้วน = 25.0 - 29.9</p>
+            <p style="text-align: center;">น้ำหนักปกติ เหมาะสม = 18.6 - 24</p>
+            <p style="text-align: center;">ผอมเกินไป = น้อยกว่า 18.5</p>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
